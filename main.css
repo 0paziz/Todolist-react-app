@@ -1,0 +1,174 @@
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400,700;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color:   var(--body_bg);
+
+}
+
+:root{
+    --body_bg:hsl(0, 0%, 98%);
+    --body_text_color: hsl(235, 21%, 11%);
+    --body_special_Color:hsl(220, 98%, 61%);
+    --body_btn_color:white;
+    --body_container_color:white;
+    --body_left_items: hsl(234, 11%, 52%);
+    --body-btn-boder:hsl(233, 11%, 84%);
+}
+
+[data-theme="dark"]{
+    --body_bg:hsl(235, 21%, 11%);
+    --body_text_color:hsl(0, 0%, 98%);
+    --body_special_Color:hsl(220, 98%, 61%);
+    --body_btn_color:hsl(235, 24%, 19%);
+    --body_container_color:hsl(235, 24%, 19%);
+    --body_left_items:hsl(236, 9%, 61%);
+    --body-btn-boder:hsl(237, 14%, 26%);
+
+}
+
+*{
+    transition: all 0.3s ease-in-out;
+}
+
+
+.header-container{height: 300px; overflow: hidden; position: relative; z-index: -1;}
+#bg-desktop{height: 100%;}
+
+#todo-list{ position: absolute; z-index: 2; top:50px;  right: 30%; padding: 40px 20px; }
+
+.logo-container{display: flex; justify-content: space-between; align-items: center; width: 500px; }
+#logo{color: white; font-size: 2.50rem;} 
+
+#light-icon{display: none;}
+.toggle-icon{width: 100%; vertical-align: middle; cursor: pointer;  }
+.toggle-icons-container{display: flex; align-items: center;  justify-content: center; padding: 0 10px;}
+
+.input-container{display: flex;  justify-content: center; align-items:center; width: 520px; margin-bottom: 20px; text-align: center;}
+.input-group{border-radius: 5px; width: 100%; background-color: var(--body_container_color);  }
+
+#input{padding: 20px 30px; width: 100%; border-radius: 5px; color: var(--body_text_color); background-color: var(--body_btn_color);   border: none;}
+input:focus{
+    outline: none;
+}
+
+
+#addBtn{border: none; background-color: var(--body_btn_color); font-weight: bolder; position: relative; right: 8px;
+     font-size: 30px; color:var(--body_special_Color) ;   padding: 5px 20px; cursor: pointer; text-align: center; vertical-align: middle; }
+
+.tasks-container{display: flex; justify-content: center; flex-direction: column;  align-items:flex-start; width: 500px;}  
+.task{display: flex; width: 100%; padding: 15px 10px; border-radius: 3px; background-color: var(--body_container_color); border-bottom: 2px solid hsl(233, 11%, 84%); font-size: 20px; color: var(--body_text_color); align-items: center;}
+
+
+.container-settings{ width: 500px; }
+.task-setting{
+    display: flex; justify-content: space-between; align-items: center;
+    width: 100%; padding: 0px 10px; border-radius: 5px; background-color: var(--body_container_color); 
+    font-size: small; color: var(--body_left_items);
+}
+
+.task-menu >*{padding: 0 2px;}
+button #all{color: var(--body_special_Color);}
+
+.task-setting a:hover{color:  var(--body_left_items);}
+
+
+input[type="radio"]{cursor: pointer;}
+input[type="checkbox"]{cursor: pointer;}
+
+.completeTask{text-decoration: line-through;}
+
+.uncompleteTask{text-decoration: none;   color: var(--body_text_color); }
+
+.settingbtn{border: none; background-color: var(--body_btn_color); color: var(--body_text_color); cursor: pointer; }
+
+.tasks-list{
+    display: flex; justify-content: space-between; width: 100%; padding: 0 5px; align-items: center;
+}
+.tasks-list span{ font-size: 18px;}
+
+.deletebtn{background-color: var(--body_btn_color);  border: none; 
+        cursor: pointer; 
+}
+
+.toggle-theme{background-color: black; border: none; padding: 20px 10px; cursor: pointer;}
+
+
+@media only screen and (max-width: 600px) {
+
+    #todo-list {
+        position: absolute;
+        right: 0%;
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    .logo-container {
+        width: 90%;
+        padding: 0 40px;
+     
+    }
+
+    .input-container {
+        width: 90%;
+        padding: 0 30px;
+    }
+
+    .container-settings,
+    .tasks-container {
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .task {
+       
+        gap: 2px;
+    }
+
+    .tasks-list {
+        gap: 2px;
+    }
+
+    .task-setting {
+        gap: 2px;
+    }
+    .settingbtn{font-size: 11px;}
+}
+
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) {
+
+    #todo-list {
+        position: absolute;
+        right: 0%;
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    .logo-container {
+        width: 90%;
+        padding: 0 40px;
+     
+    }
+
+    .input-container {
+        width: 90%;
+        padding: 0 50px;
+    }
+
+    .container-settings,
+    .tasks-container {
+        width: 100%;
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+}
+
+
+
