@@ -7,8 +7,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/0paziz/insure-landing-page)
-- Live Site URL: [Add live site URL here](https://0paziz.github.io/insure-landing-page/)
+- Solution URL: [](https://github.com/0paziz/insure-landing-page)
+- Live Site URL: [](https://0paziz.github.io/insure-landing-page/)
 
 
 ### Built with
