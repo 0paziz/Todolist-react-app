@@ -7,8 +7,8 @@
 
 ### Links
 
-- Solution URL: [](https://github.com/0paziz/insure-landing-page)
-- Live Site URL: [](https://0paziz.github.io/insure-landing-page/)
+
+- Live Site URL: [ToDoList](https://0paziz.github.io/Todolist-react-app/)
 
 
 ### Built with
